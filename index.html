@@ -1,191 +1,131 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bennie’s Mobile Tire & Roadside Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-  color: #1a1a1a;
-  line-height: 1.6;
-}
+  <meta name="description" content="Fast, reliable 24/7 mobile tire and roadside assistance including tire changes, jump starts, lockouts, and fuel delivery in Augusta, GA.">
 
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* HEADER */
-.header {
-  background: #000;
-  padding: 15px 0;
-}
+<!-- HEADER -->
+<header style="background:#000;padding:15px 0;">
+  <div style="width:90%;max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;">
+    <img src="assets/logo.jpg" alt="Bennie’s Mobile Tire & Roadside Service" style="max-height:55px;">
+    <a href="tel:+17065551234" style="background:#ffcc00;color:#000;padding:10px 18px;font-weight:bold;text-decoration:none;border-radius:5px;">
+      Call Now
+    </a>
+  </div>
+</header>
 
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+<!-- HERO -->
+<section style="position:relative;height:80vh;overflow:hidden;">
+  <img src="assets/service-hero.jpg" alt="Mobile Tire Roadside Service" style="width:100%;height:100%;object-fit:cover;">
+  <div style="position:absolute;inset:0;background:rgba(0,0,0,0.55);"></div>
 
-.logo {
-  max-height: 55px;
-}
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;padding:20px;max-width:800px;">
+    <h1 style="font-size:2.6rem;margin-bottom:15px;">Fast & Reliable<br>Mobile Roadside Assistance</h1>
+    <p>24/7 on-site service when you need it most.</p>
 
-.call-btn {
-  background: #ffcc00;
-  color: #000;
-  padding: 10px 18px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-}
+    <div style="margin-top:25px;">
+      <a href="tel:+17065551234" style="background:#ffcc00;color:#000;padding:12px 24px;font-weight:bold;text-decoration:none;border-radius:5px;">
+        Call For Service
+      </a>
+    </div>
+  </div>
+</section>
 
-/* HERO */
-.hero {
-  position: relative;
-  height: 80vh;
-  overflow: hidden;
-}
+<!-- ABOUT -->
+<section style="padding:60px 20px;text-align:center;">
+  <h2>Trusted Mobile Roadside Service</h2>
+  <p style="max-width:800px;margin:20px auto;">
+    Bennie’s Mobile Tire & Roadside Service provides dependable on-site assistance
+    for drivers experiencing roadside issues. From flat tires to dead batteries,
+    we come directly to your location to get you back on the road safely.
+  </p>
+</section>
 
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+<!-- SERVICES -->
+<section style="background:#f5f5f5;padding:60px 20px;">
+  <h2 style="text-align:center;">Our Services</h2>
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-}
+  <div style="max-width:1100px;margin:40px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
+    <div style="background:#fff;padding:25px;border-radius:8px;">
+      <h3>Mobile Tire Change</h3>
+      <p>Professional tire change services performed on-site at your location.</p>
+    </div>
+    <div style="background:#fff;padding:25px;border-radius:8px;">
+      <h3>Jump Starts</h3>
+      <p>Fast battery jump starts to get your vehicle running again.</p>
+    </div>
+    <div style="background:#fff;padding:25px;border-radius:8px;">
+      <h3>Lockout Assistance</h3>
+      <p>Safe, damage-free vehicle entry if you’re locked out.</p>
+    </div>
+    <div style="background:#fff;padding:25px;border-radius:8px;">
+      <h3>Fuel Delivery</h3>
+      <p>Out of gas? We deliver fuel directly to your location.</p>
+    </div>
+    <div style="background:#fff;padding:25px;border-radius:8px;">
+      <h3>Winch-Out & Towing Support</h3>
+      <p>Recovery assistance for stuck or immobilized vehicles.</p>
+    </div>
+    <div style="background:#fff;padding:25px;border-radius:8px;">
+      <h3>Tire Installation & Rotation</h3>
+      <p>Convenient tire services completed on-site.</p>
+    </div>
+  </div>
+</section>
 
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-  max-width: 800px;
-  padding: 20px;
-}
+<!-- HOW IT WORKS -->
+<section style="background:#fff;padding:60px 20px;text-align:center;">
+  <h2>How It Works</h2>
+  <div style="display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-top:25px;">
+    <div style="background:#000;color:#fff;padding:15px 25px;border-radius:6px;">📞 Call For Help</div>
+    <div style="background:#000;color:#fff;padding:15px 25px;border-radius:6px;">📍 Share Your Location</div>
+    <div style="background:#000;color:#fff;padding:15px 25px;border-radius:6px;">🚗 We Come To You</div>
+  </div>
+</section>
 
-.hero-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-}
+<!-- CTA -->
+<section style="background:#000;color:#fff;text-align:center;padding:60px 20px;">
+  <h2>Need Immediate Assistance?</h2>
+  <p>Available 24/7 for emergency roadside service.</p>
+  <a href="tel:+17065551234" style="background:#ffcc00;color:#000;padding:12px 24px;font-weight:bold;text-decoration:none;border-radius:5px;">
+    Call Now
+  </a>
+</section>
 
-.hero-buttons {
-  margin-top: 25px;
-}
+<!-- FOOTER -->
+<footer style="background:#111;color:#bbb;text-align:center;padding:25px;">
+  <p>© 2025 Bennie’s Mobile Tire & Roadside Service</p>
+  <p>Serving Augusta, GA & Surrounding Areas</p>
+  <p>
+    📞 <a href="tel:+17065551234" style="color:#ffcc00;text-decoration:none;font-weight:bold;">
+      +1 (706) 555-1234
+    </a>
+  </p>
+</footer>
 
-.primary-btn,
-.secondary-btn {
-  padding: 12px 24px;
-  margin: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-}
+<!-- FLOATING MOBILE CALL BUTTON -->
+<a href="tel:+17065551234" style="
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#ffcc00;
+  color:#000;
+  font-weight:bold;
+  padding:14px 22px;
+  border-radius:50px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  z-index:9999;
+">
+  📞 Call Now
+</a>
 
-.primary-btn {
-  background: #ffcc00;
-  color: #000;
-}
-
-.secondary-btn {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-/* ABOUT */
-.about {
-  padding: 60px 0;
-  text-align: center;
-}
-
-/* SERVICES */
-.services {
-  background: #f5f5f5;
-  padding: 60px 0;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.service-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-/* HOW IT WORKS */
-.how-it-works {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.steps {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin-top: 25px;
-}
-
-.step {
-  background: #000;
-  color: #fff;
-  padding: 15px 25px;
-  border-radius: 6px;
-}
-
-/* CTA */
-.cta {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-/* FOOTER */
-.footer {
-  background: #111;
-  color: #bbb;
-  text-align: center;
-  padding: 25px;
-}
-
-.footer-phone {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* FLOATING MOBILE CALL BUTTON */
-.floating-call-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ffcc00;
-  color: #000;
-  font-weight: bold;
-  padding: 14px 22px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-  z-index: 9999;
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .floating-call-btn {
-    display: block;
-  }
-}
+</body>
+</html>
